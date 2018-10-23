@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h3>Full-stack 商業分析</h3>
+				<h2>自動測試框架探索與 Katalon</h2>
+				<h6>Elton Lau</h6>
+				<h6>26-Oct-2018</h6>
+			</section>
+			<section>
+				<section>
+					<h2>Business Analyst can be certified!</h2>
+				</section>
+				<section>
+					<h3>According to BABOK V3 Knowledge Areas</h3>
+					<ul>
+						<li>Business Analysis Planning & Monitoring</li>
+						<li>Elicitation and Collaboration</li>
+						<li>Requirements Life Cycle Management</li>
+						<li>Strategy Analysis</li>
+						<li>Requirements Analysis and Design Definition</li>
+						<li>Solution Evaluation</li>
+					</ul>
+				</section>
+				<section>Then WTH is a Full-Stack Business Analyst?</section>
+				<section data-markdown>
+					<textarea>
+						> A Full-Stack Business Analyst is someone who’s able to work from collecting requirements to delivering the desired products to users
+					</textarea>
+				</section>
+				<section>
+					<h2>Elements of a full-stack BA</h2>
+					<ul>
+						<li>Identify requirements</li>
+						<li>Understanding BDD & TDD</li>
+						<li>Agile mindset</li>
+						<li>Ability to code</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h1>Test Automation Framework</h1>
+				</section>
+				<section>
+					<h4>A modern test automation framework should contain:</h4>
+					<ul>
+						<li>Data-driven framework</li>
+						<li>Module-based framework</li>
+						<li>Library architecture framework</li>
+						<li>Page object model (POM)</li>
+						<li>Keyword-driven framework</li>
+						<li>Behavior-driven framework</li>
+						<li>Reporting</li>
+						<li>Integration with CI/CD</li>
+					</ul>
+				</section>
+				<section>
+					<h4>Selenium/xUnit, Robot Framework...</h4>
+					<h1>Then why Katalon Studio?</h1>
+				</section>
+				<section>
+					<h1>Demo of Katalon Studio</h1>
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
